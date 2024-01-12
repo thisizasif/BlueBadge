@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
+  <a href="http://thisizasif.blogspot.com/"><img src="https://github.com/thisizasif/BlueBadge/assets/68771679/7ab73a37-f577-40d4-ae37-cae899b1798a" alt="Thisizasif" width="200"></a>
   <br>
   Blue-Badge
   <br>
@@ -30,7 +30,8 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
+![screenshot]![IMG_20240112_180159 1](https://github.com/thisizasif/BlueBadge/assets/68771679/1388b131-25e2-4aef-957b-53b1644351a5)
+
 
 
 ## Key Features
