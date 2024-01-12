@@ -38,9 +38,9 @@ def print_details():
     \033[94mREPO DETAILS\033[0m
     \033[96mAuthor:\033[0m thisizasif
     \033[96mVersion:\033[0m 1.0.0
-    \033[96mDescription:\033[0m Blue-Badge pdf Decryption Tool.
+    \033[96mDescription:\033[0m  pdf Password Cracking Tool.
     \033[96mLicense:\033[0m MIT
-    \033[96mGitHub:\033[0m https://github.com/thisizasif/BlueBadge
+    \033[96mGitHub:\033[0m https://github.com/thisizasif
     """
     print(details)
 
@@ -75,7 +75,7 @@ def main():
             clear_terminal()
             print_header()
             print_details()
-            print("\033[94mGetting into PDF...\033[0m")
+            print("\033[94mGetting into UNLOCKPDF...\033[0m")
             time.sleep(2)
             subprocess.run(['python', 'unlockpdf.py'])
             break
