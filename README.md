@@ -117,3 +117,10 @@ MIT
 > GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
 > Twitter [@amit_merchant](https://twitter.com/amit_merchant)
 
+## Disclaimer
+
+⚠️ **Disclaimer: Hacking Without Permission is Illegal**
+
+This tool is strictly educational, focusing on cyber-security, ethical hacking, and penetration testing. The tool is designed to facilitate learning and understanding in Cyber-Security, empowering individuals to defend themselves against real hackers.
+
+Remember, always act responsibly and within legal boundaries when it comes to exploring and applying your knowledge in the field of cyber-security.
