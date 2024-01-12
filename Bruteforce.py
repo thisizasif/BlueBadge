@@ -14,7 +14,7 @@ passwords = [line.strip() for line in open("BlueBadge.txt")]
 for password in tqdm(passwords, "Decrypting PDF"):
     try:
         # open PDF file
-        with fitz.open("pdf/Aaaa.pdf", password=password) as pdf:
+        with fitz.open("bluebadge.pdf", password=password) as pdf:
             # Password decrypted successfully, break out of the loop
             print("[+] Password found:", password)
             break
