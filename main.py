@@ -69,7 +69,7 @@ def main():
             print_details()
             print("\033[94mGeting into Word-List...\033[0m")
             time.sleep(2)
-            subprocess.run(['python', 'Wordlist.py'])
+            subprocess.run(['python', 'wordlist.py'])
             break
         elif choice == '2':
             clear_terminal()
