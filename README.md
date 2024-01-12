@@ -9,7 +9,6 @@
 
 
 <p align="center">
-  <a href="https://badge.fury.io/js/thisizasif">
     <img src="https://badge.fury.io/js/thisizasif"
          alt="Gitter">
   </a>
@@ -40,6 +39,30 @@
 
 - **PDF Decryption:** Utilizes the `pikepdf` library to attempt to decrypt a PDF file using passwords from the generated word list.
 
+## Installation
+
+Ensure a smooth setup by installing the necessary dependencies. In your Termux environment, run the following commands:
+
+```bash
+pkg install python 
+```
+
+```bash
+pip3 install termcolor
+```
+
+```bash
+pkg install qpdf
+```
+
+```bash
+pip3 install pikepdf
+```
+
+optional
+```bash
+pip3 install Pillow Deprecated packaging lxml wrapt
+```
 
 ## How To Use
 
