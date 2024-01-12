@@ -1,102 +1,96 @@
-<div align='center'>
+
+<h1 align="center">
+  <br>
+  <a href="http://www.amitmerchant.com/"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
+  <br>
+  Blue-Badge
+  <br>
+</h1>
 
 
-<h1>Custom Word List Generator</h1>
-<p>Blue Badge is a Python script designed for educational purposes, allowing users to explore different password variations through permutation generation. This tool does not engage in any form of security attacks. It should be utilized responsibly and ethically, aligning with ethical hacking and password exploration practices. Blue Badge aims to provide users with an understanding of password complexity and the importance of robust password creation without promoting malicious activities.</p>
+<p align="center">
+  <a href="https://badge.fury.io/js/thisizasif">
+    <img src="https://badge.fury.io/js/thisizasif"
+         alt="Gitter">
+  </a>
+  <a href="https://gitter.im/thisizasif/BlueBadge"><img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg"></a>
+  <a href="https://saythanks.io/to/thisizasif@gmail.com">
+      <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
+  </a>
+  <a href="https://www.paypal.me/thisizasif">
+    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
+  </a>
+</p>
 
-<h4> <a href=1>View Demo</a> <span> · </span> <a href="https://github.com/thisizasif/BlueBadge/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/thisizasif/BlueBadge/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/thisizasif/BlueBadge/issues"> Request Feature </a> </h4>
+<p align="center">
+  <a href="##key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#related">Related</a> •
+  <a href="#license">License</a>
+</p>
 
-
-</div>
-
-# :notebook_with_decorative_cover: Table of Contents
-
-- [About the Project](#star2-about-the-project)
-- [Roadmap](#compass-roadmap)
-- [Contributing](#wave-contributing)
-- [License](#warning-license)
-- [Contact](#handshake-contact)
-
-
-## :star2: About the Project
-
-### :dart: Features
-- Permutation Generation:
-- Colored Terminal Output
-- Hacker-themed Look
-- Educational Focus
-- User-Friendly Interaction
-- File Output
-- Progress Tracking
+![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
 
 
-## :toolbox: Getting Started
+## Key Features
 
-### :bangbang: Prerequisites
+- **Word List Generation:** The tool can generate permutations of input strings to create a word list for password cracking.
 
-- Termux App:
-- Python:
+- **PDF Decryption:** Utilizes the `pikepdf` library to attempt to decrypt a PDF file using passwords from the generated word list.
+
+
+## How To Use
+
+To clone and run BlueBadge, you'll need to follow these steps From your command line:
+
+# Clone this repository
 ```bash
-pkg install python
-```
-- colorama Module:
-```bash
-pip install colorama
-```
-- pikepdf Module:
-```bash
-pip install pikepdf
-```
-- tqdm Module:
-```bash
-pip install tqdm
+$ git clone https://github.com/thisizasif/BlueBadge.git
 ```
 
-
-### :gear: Installation
-
-Git clone
+# Go into the repository
 ```bash
-https://github.com/thisizasif/BlueBadge.git
-```
-Change Directory
-```bash
-cd BlueBadge
-```
-Execute Program
-```bash
-python3 main.py
+$ cd BlueBadge
 ```
 
-
-### :test_tube: Running Tests
-
-enter input Example:
+# Run the tool
 ```bash
-BlueBadge
+$ python3 main.py
 ```
 
+> **Tip:**
+For optimal functionality of BlueBadge's `unlockpdf.py` script, follow these steps:
 
-## :compass: Roadmap
+1. **Rename PDF File:** Ensure your PDF file is named `bluebadge.pdf`.
+   
+2. **Move/Copy to BlueBadge Directory:** Place the renamed `bluebadge.pdf` in the BlueBadge directory.
 
-* [x] Generate wordlist
-* [x] Bruteforce
+**Important:** Failure to adhere to these instructions might result in `unlockpdf.py` not working as expected.
 
+## Support
 
-## :wave: Contributing
+<a href="https://www.buymeacoffee.com/thisizasif" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
-<a href="https://github.com/thisizasif/BlueBadge.git/graphs/contributors"> <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" /> </a>
+<p>Or</p> 
 
-Contributions are always welcome!
+<a href="https://www.patreon.com/thisizasif">
+	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
 
-see `contributing.md` for ways to get started
+## You may also like...
 
-## :warning: License
+- [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
+- [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
 
-Distributed under the no License. See LICENSE.txt for more information.
+## License
 
-## :handshake: Contact
+MIT
 
-thisizasif - [@twitter_handle](thisixasif) - thisizasif@gmail.com
+---
 
-Project Link: [https://github.com/thisizasif/BlueBadge.git](https://github.com/thisizasif/BlueBadge.git)
+> [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
+> GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
+> Twitter [@amit_merchant](https://twitter.com/amit_merchant)
+
