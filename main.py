@@ -1,39 +1,87 @@
-import itertools
 import os
+import subprocess
+from termcolor import cprint
+import time
 
 def clear_terminal():
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('clear' if os.name == 'posix' else 'cls')
 
-def generate_permutations(input_str):
-    perms = list(itertools.permutations(input_str))
-    total_permutations = len(perms)
+def print_header():
+    header = """
+ ███████████  ████                                 
+░░███░░░░░███░░███                                 
+ ░███    ░███ ░███  █████ ████  ██████             
+ ░██████████  ░███ ░░███ ░███  ███░░███            
+ ░███░░░░░███ ░███  ░███ ░███ ░███████             
+ ░███    ░███ ░███  ░███ ░███ ░███░░░              
+ ███████████  █████ ░░████████░░██████             
+░░░░░░░░░░░  ░░░░░   ░░░░░░░░  ░░░░░░              
 
-    print(f"\033[1;32mGenerating permutations... (Total: {total_permutations})\033[0m")
 
-    with open('BlueBadge.txt', 'w') as file:
-        for i, perm in enumerate(perms, start=1):
-            password = ''.join(perm)
-            file.write(password + '\n')
-            print(f"\033[1;36mGenerated password {i}/{total_permutations}: {password}\033[0m", end='\r')
 
-    print(f"\n\033[1;32mPermutations saved to BlueBadge.txt.\033[0m")
+ ███████████                █████                  
+░░███░░░░░███              ░░███                   
+ ░███    ░███  ██████    ███████   ███████  ██████ 
+ ░██████████  ░░░░░███  ███░░███  ███░░███ ███░░███
+ ░███░░░░░███  ███████ ░███ ░███ ░███ ░███░███████ 
+ ░███    ░███ ███░░███ ░███ ░███ ░███ ░███░███░░░  
+ ███████████ ░░████████░░████████░░███████░░██████ 
+░░░░░░░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░███ ░░░░░░  
+                                  ███ ░███         
+                                 ░░██████          
+                                  ░░░░░░           
+"""
+    cprint(header, 'cyan')
+
+def print_details():
+    details = """
+    \033[94mREPO DETAILS\033[0m
+    \033[96mAuthor:\033[0m thisizasif
+    \033[96mVersion:\033[0m 1.0.0
+    \033[96mDescription:\033[0m Blue-Badge pdf Decryption Tool.
+    \033[96mLicense:\033[0m MIT
+    \033[96mGitHub:\033[0m https://github.com/thisizasif/BlueBadge
+    """
+    print(details)
+
+def print_menu_options():
+    cprint("\n\033[94mBLUE-BADGE MENU\033[0m", 'yellow')
+    time.sleep(0.5)
+    print("1 - Generate Word-List")
+    time.sleep(0.5)
+    print("2 - Unlock-Pdf")
+    time.sleep(0.5)
 
 def main():
     clear_terminal()
-    print("\033[1;33m###############################################\033[0m")
-    print("\033[1;33m#                                             #\033[0m")
-    print("\033[1;33m#               [ Blue Badge ]                #\033[0m")
-    print("\033[1;33m#               Version: 1.0.0                #\033[0m")
-    print("\033[1;33m#             Author: Thisizasif              #\033[0m")
-    print("\033[1;33m#                                             #\033[0m")
-    print("\033[1;33m###############################################\033[0m")
-    print("\n")
+    print_header()
+    print_details()
 
-    input_str = input("\033[1;32mEnter the input: \033[0m")
-    generate_permutations(input_str)
+    while True:
+        print_menu_options()
+        time.sleep(0.5)
 
-    input("\033[1;36mPress Enter to continue...\033[0m")
-    clear_terminal()
+        choice = input("Enter your choice (): ")
+
+        if choice == '1':
+            clear_terminal()
+            print_header()
+            print_details()
+            print("\033[94mGeting into Word-List...\033[0m")
+            time.sleep(2)
+            subprocess.run(['python', 'Wordlist.py'])
+            break
+        elif choice == '2':
+            clear_terminal()
+            print_header()
+            print_details()
+            print("\033[94mGetting into PDF...\033[0m")
+            time.sleep(2)
+            subprocess.run(['python', 'unlockpdf.py'])
+            break
+        else:
+            print("\033[91mInvalid choice. Please enter a valid option.\033[0m")
+            input("Press Enter to continue...")
 
 if __name__ == "__main__":
     main()
