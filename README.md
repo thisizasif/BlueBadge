@@ -44,6 +44,19 @@
 
 Ensure a smooth setup by installing the necessary dependencies. In your Termux environment, run the following commands:
 
+
+```bash
+apt update -y
+```
+
+```bash
+apt upgrade -y
+```
+
+```bash
+pkg install git
+```
+
 ```bash
 pkg install python 
 ```
