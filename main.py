@@ -20,16 +20,14 @@ def generate_permutations(input_str):
 
 def main():
     clear_terminal()
-  print("\033[1;33m###############################################\033[0m")
-  print("\033[1;33m#                                             #\033[0m")
-  print("\033[1;33m#        [ Blue Badge ]              #\033[0m")
-  print("\033[1;33m#               Version: 1.0.0               #\033[0m")
-  print("\033[1;33m#                 Author: Thisizasif          #\033[0m")
-  print("\033[1;33m#                                             #\033[0m")
-  print("\033[1;33m###############################################\033[0m")
-  print("\n")
-
-    
+    print("\033[1;33m###############################################\033[0m")
+    print("\033[1;33m#                                             #\033[0m")
+    print("\033[1;33m#               [ Blue Badge ]                #\033[0m")
+    print("\033[1;33m#               Version: 1.0.0                #\033[0m")
+    print("\033[1;33m#             Author: Thisizasif              #\033[0m")
+    print("\033[1;33m#                                             #\033[0m")
+    print("\033[1;33m###############################################\033[0m")
+    print("\n")
 
     input_str = input("\033[1;32mEnter the input: \033[0m")
     generate_permutations(input_str)
