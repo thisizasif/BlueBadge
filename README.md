@@ -74,6 +74,10 @@ pkg install libxml2 libxslt
 ```
 
 ```bash
+pip3 install tqdm
+```
+
+```bash
 pip3 install pikepdf
 ```
 
