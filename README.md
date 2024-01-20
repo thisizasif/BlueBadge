@@ -135,9 +135,8 @@ MIT
 
 ---
 
-> [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
-> GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
-> Twitter [@amit_merchant](https://twitter.com/amit_merchant)
+> GitHub [@thisizasif](https://github.com/thisizasif) &nbsp;&middot;&nbsp;
+> Twitter [@thisizasif](https://twitter.com/thisixasif)
 
 ## Disclaimer
 
