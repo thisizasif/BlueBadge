@@ -126,8 +126,8 @@ For optimal functionality of BlueBadge's `unlockpdf.py` script, follow these ste
 
 ## You may also like...
 
-- [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
-- [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
+- [thisizasif]() - 
+- [thisizasif]() - 
 
 ## License
 
