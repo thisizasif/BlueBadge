@@ -34,23 +34,26 @@ def print_header():
     cprint(header, 'cyan')
 
 def print_details():
-    details = """
-    \033[94mREPO DETAILS\033[0m
-    \033[96mAuthor:\033[0m thisizasif
-    \033[96mVersion:\033[0m 1.0.0
-    \033[96mDescription:\033[0m  pdf Password Cracking Tool.
-    \033[96mLicense:\033[0m MIT
-    \033[96mGitHub:\033[0m https://github.com/thisizasif
-    """
-    print(details)
+  details = """
+\033[1;32m╭──────────────────────────────────────╮
+│           \033[1;36m🚀 TOOL DETAILS 🚀\033[1;32m         │
+╰──────────────────────────────────────╯
+\033[1;37m\033[34mAuthor:\033[0m      thisizasif
+\033[1;37m\033[34mGitHub:\033[0m      @thisizasif
+\033[1;37m\033[34mTelegram:\033[0m    @thisizasif
+\033[1;37m\033[34mVersion:\033[0m     1.1.0
+\033[1;37m\033[34mLicense:\033[0m     MIT
+\033[1;37m\033[34mDescription:\033[0m BLUE-BADGE TOOL
+"""
+  print(details)
 
 def print_menu_options():
     cprint("\n\033[94mBLUE-BADGE MENU\033[0m", 'yellow')
-    time.sleep(0.5)
-    print("1 - Generate Word-List")
-    time.sleep(0.5)
-    print("2 - Unlock-Pdf")
-    time.sleep(0.5)
+    time.sleep(0.2)
+    print("1 - Word-List")
+    time.sleep(0.2)
+    print("2 - Bruteforce")
+    time.sleep(0.2)
 
 def main():
     clear_terminal()
@@ -59,7 +62,7 @@ def main():
 
     while True:
         print_menu_options()
-        time.sleep(0.5)
+        time.sleep(0.2)
 
         choice = input("Enter your choice (): ")
 
@@ -67,7 +70,7 @@ def main():
             clear_terminal()
             print_header()
             print_details()
-            print("\033[94mGeting into Word-List...\033[0m")
+            print("\033[94mGeting into Word-List Generator...\033[0m")
             time.sleep(2)
             subprocess.run(['python', 'wordlist.py'])
             break
@@ -75,9 +78,9 @@ def main():
             clear_terminal()
             print_header()
             print_details()
-            print("\033[94mGetting into UNLOCKPDF...\033[0m")
+            print("\033[94mGetting into Bruteforce...\033[0m")
             time.sleep(2)
-            subprocess.run(['python', 'unlockpdf.py'])
+            subprocess.run(['python', 'bruteforce.py'])
             break
         else:
             print("\033[91mInvalid choice. Please enter a valid option.\033[0m")
