@@ -50,7 +50,7 @@ def print_details():
 def print_menu_options():
     cprint("\n\033[94mBRUTE-FORCE MENU\033[0m", 'yellow')
     time.sleep(0.2)
-    print("1 - Brute force a PDF filr")
+    print("1 - Brute force a PDF file")
     time.sleep(0.2)
     print("2 - Brute force a ZIP file")
     time.sleep(0.2)
