@@ -85,7 +85,9 @@ optional
 ```bash
 pip3 install Pillow Deprecated packaging lxml wrapt
 ```
-
+```bash
+pip install wrapt==1.16.0 deprecated==1.2.14 lxml==5.1.0 packaging==23.2 pillow==10.2.0 pikepdf==8.11.2 termcolor==2.4.0 tqdm==4.66.1
+```
 ## How To Use
 
 To clone and run BlueBadge, you'll need to follow these steps From your command line:
